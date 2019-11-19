@@ -13,7 +13,7 @@ Then run the following code:
 
 ```smalltalk
 Metacello new
-  baseline: 'TestAmplificationDrTests';
+  baseline: 'TestAmplificationDataFrame';
   repository: 'github://mabdi/Amplification-DataFrame/src';
   load.
 ```
