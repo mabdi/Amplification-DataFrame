@@ -23,7 +23,7 @@ list := OrderedCollection new.
 "list add: DataFrameHeadTailTest->DataFrame." "good"
 "list add: DataFrameStatsTest->DataFrame." "!"
 "list add: DataFrameAggrGroupTest->DataFrame." "not bad"
-"list add: DataFrameCsvWriterTest->DataFrameCsvWriter." 
+list add: DataFrameCsvWriterTest->DataFrameCsvWriter. 
 "list add: DataFrameCsvReaderTest->DataFrameCsvReader."
 "list add: DataSeriesTest->DataSeries."
 
