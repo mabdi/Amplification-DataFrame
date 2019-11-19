@@ -92,74 +92,18 @@ DataFrameCsvWriterTestAmpTest >> testWriteToCsvLineEndLf_amp [
 		equals: DataFrameCsvWriter
 		description: 'testWriteToCsvLineEndLf_amp:1.1'.
 	self
-		assert: writer defaultSeparator class
-		equals: Character
+		assert: writer size
+		equals: 4
 		description: 'testWriteToCsvLineEndLf_amp:1.2'.
-	self
-		assert: writer defaultSeparator
-		equals: $,
-		description: 'testWriteToCsvLineEndLf_amp:1.3'.
-	self
-		assert: writer lineEndConvention class
-		equals: ByteSymbol
-		description: 'testWriteToCsvLineEndLf_amp:1.4'.
-	self
-		assert: writer lineEndConvention size
-		equals: 2
-		description: 'testWriteToCsvLineEndLf_amp:1.5'.
-	self
-		assert: writer separator class
-		equals: Character
-		description: 'testWriteToCsvLineEndLf_amp:1.6'.
-	self
-		assert: writer separator
-		equals: $,
-		description: 'testWriteToCsvLineEndLf_amp:1.7'.
-	self
-		assert: writer defaultLineEndConvention class
-		equals: ByteSymbol
-		description: 'testWriteToCsvLineEndLf_amp:1.8'.
-	self
-		assert: writer defaultLineEndConvention size
-		equals: 2
-		description: 'testWriteToCsvLineEndLf_amp:1.9'.
 	writer lineEndConvention: #lf.
 	self
 		assert: writer class
 		equals: DataFrameCsvWriter
 		description: 'testWriteToCsvLineEndLf_amp:2.1'.
 	self
-		assert: writer defaultSeparator class
-		equals: Character
+		assert: writer size
+		equals: 4
 		description: 'testWriteToCsvLineEndLf_amp:2.2'.
-	self
-		assert: writer defaultSeparator
-		equals: $,
-		description: 'testWriteToCsvLineEndLf_amp:2.3'.
-	self
-		assert: writer lineEndConvention class
-		equals: ByteSymbol
-		description: 'testWriteToCsvLineEndLf_amp:2.4'.
-	self
-		assert: writer lineEndConvention size
-		equals: 2
-		description: 'testWriteToCsvLineEndLf_amp:2.5'.
-	self
-		assert: writer separator class
-		equals: Character
-		description: 'testWriteToCsvLineEndLf_amp:2.6'.
-	self
-		assert: writer separator
-		equals: $,
-		description: 'testWriteToCsvLineEndLf_amp:2.7'.
-	self
-		assert: writer defaultLineEndConvention class
-		equals: ByteSymbol
-		description: 'testWriteToCsvLineEndLf_amp:2.8'.
-	self
-		assert: writer defaultLineEndConvention size
-		equals: 2
-		description: 'testWriteToCsvLineEndLf_amp:2.9'.
 	dataFrame writeTo: commaQuoteCsvFile using: writer.
 	self
 		assert: dataFrame class

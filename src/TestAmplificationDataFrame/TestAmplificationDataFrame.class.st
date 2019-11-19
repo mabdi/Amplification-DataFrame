@@ -19,17 +19,18 @@ TestAmplificationDataFrame >> testTargtsMapping [
 "generatedBy: `AmplificationHelper getStringPairsForPackagePrefix: 'DataFrame.*'`"
 | list |
 list := OrderedCollection new.
-"list add: DataFrameInternalTest->DataFrameInternal." "good"
-"list add: DataFrameHeadTailTest->DataFrame." "good"
-"list add: DataFrameStatsTest->DataFrame." "!"
-"list add: DataFrameAggrGroupTest->DataFrame." "not bad"
+list add: DataFrameInternalTest->DataFrameInternal. "good"
+list add: DataFrameHeadTailTest->DataFrame. "good"
+list add: DataFrameStatsTest->DataFrame. "!"
+list add: DataFrameAggrGroupTest->DataFrame. "not bad"
 list add: DataFrameCsvWriterTest->DataFrameCsvWriter. 
-"list add: DataFrameCsvReaderTest->DataFrameCsvReader."
-"list add: DataSeriesTest->DataSeries."
+list add: DataFrameCsvReaderTest->DataFrameCsvReader.
+list add: DataSeriesTest->DataSeries.
+list add: DataFrameTest->DataFrame.
 
-"list add: DataFrameTypeDetectorTest->DataFrameTypeDetector." "error"
+"list add: DataFrameTypeDetectorTest->DataFrameTypeDetector." "failed"
 
 
-"list add: DataFrameTest->DataFrame." "Error"
+
 ^ list.
 ]
